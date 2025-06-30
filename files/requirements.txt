@@ -1,0 +1,3 @@
+# Initial dependencies
+requests
+pyfiglet

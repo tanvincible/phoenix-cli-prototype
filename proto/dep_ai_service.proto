@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Phoenix.proto;
+
+import "task_protocol.proto";
+
+service DepAIService {
+  rpc HandleDependencyRequest (TaskRequest) returns (TaskResponse);
+}

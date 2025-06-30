@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Phoenix.proto;
+
+message TaskRequest {
+  string file_target = 1; // e.g., "main.py", "requirements.txt"
+  string proposed_change = 2; // The content to add/modify
+  string explanation = 3; // Why this change is proposed
+}
+
+message TaskResponse {
+  enum Status {
+    UNKNOWN = 0;
+    DONE = 1;
+    ERROR = 2;
+  }
+  Status status = 1;
+  string message = 2;
+}

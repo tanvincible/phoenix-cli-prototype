@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Phoenix.proto;
+
+import "task_protocol.proto";
+
+service MainAIService {
+  rpc HandleUserPrompt (TaskRequest) returns (TaskResponse);
+  rpc HandleDependencyNotification (TaskResponse) returns (TaskResponse); // For DepAI to confirm
+}
