@@ -2,11 +2,11 @@ import grpc
 import os
 import sys
 
-# Add the parent directory to the Python path to import generated gRPC files and common
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 import generated.main_ai_service_pb2_grpc as main_pb2_grpc
 import generated.task_protocol_pb2 as task_pb2
+
+# Add the parent directory to the Python path to import generated gRPC files and common
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 
 def run_cli():
