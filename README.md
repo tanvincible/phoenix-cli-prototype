@@ -22,7 +22,7 @@ import requests
 def fetch_and_log():
     response = requests.get('https://example.com')
     print(response.text)
-````
+```
 
 And it updates `requirements.txt` for you.
 
@@ -31,8 +31,8 @@ And it updates `requirements.txt` for you.
 ### 1. Clone + Install Dependencies
 
 ```bash
-git clone https://github.com/tanvincible/phoenix-prototype.git
-cd phoenix-prototype
+git clone https://github.com/tanvincible/phoenix-cli-prototype.git
+cd phoenix-cli-prototype
 pip install grpcio grpcio-tools protobuf
 ```
 
@@ -88,7 +88,7 @@ You’ll see:
 ```
 phoenix-prototype
 ├── agents/         # MainAI and DepAI gRPC servers
-├── cli/            # NL-to-code CLI (quokko_cli.py)
+├── cli/            # NL-to-code CLI (phoenix_cli.py)
 ├── common/         # Gemini wrapper
 ├── files/          # Your generated codebase (main.py, requirements.txt)
 ├── generated/      # gRPC-generated stubs

@@ -24,7 +24,7 @@ def run_cli():
         print(f"\nPhoenix CLI: Sending command to MainAI: '{user_input}'...")
         try:
             request = task_pb2.TaskRequest(
-                file_target="main.py",  # Initial target, MainAI will decide further
+                file_target="main.py",
                 proposed_change=user_input,
                 explanation="User's natural language code editing command.",
             )

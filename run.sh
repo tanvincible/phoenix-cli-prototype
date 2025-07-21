@@ -76,7 +76,7 @@ sleep 2 # Give MainAI a moment to start
 
 # --- Start CLI ---
 echo "--- Starting Phoenix CLI ---"
-python cli/Phoenix_cli.py
+python cli/phoenix_cli.py
 
 # --- Cleanup ---
 echo "--- Shutting down agents ---"
